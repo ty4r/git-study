@@ -19,7 +19,6 @@
     <script>
     function clock(){    
         var date = new Date();
-        console.log(new Date().getTime());
         var year = date.getFullYear();
         var month = date.getMonth() + 1;
         var day = date.getDate();
@@ -27,7 +26,6 @@
         var minute = ("0" + date.getMinutes()).slice(-2);
         var second = ("0" + date.getSeconds()).slice(-2);
         var formatDay = "Japan Time: " + year + "." + month + "." + day + " " + hour + ":" + minute + ":" + second;
-        //document.write(formatDay);
         document.getElementById("watch").innerHTML = formatDay;
     }
     setInterval("clock()", 1000);
