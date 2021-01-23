@@ -23,10 +23,9 @@
         var month = date.getMonth() + 1;
         var day = date.getDate();
         var hour = ("0" + date.getHours()).slice(-2);
-        var hour2 = date.getHours();
         var minute = ("0" + date.getMinutes()).slice(-2);
         var second = ("0" + date.getSeconds()).slice(-2);
-        var formatDay = "Japan Time: " + year + "." + month + "." + day + "　" + hour2 + ":" + minute + ":" + second;
+        var formatDay = "Japan Time: " + year + "." + month + "." + day + "　" + hour + ":" + minute + ":" + second;
         document.getElementById("watch").innerHTML = formatDay;
     }
     setInterval("clock()", 1000);
